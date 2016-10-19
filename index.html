@@ -1,10 +1,515 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Hello World!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="嘉华普惠专业从事房产抵押贷款,房屋短期贷款等.贷款利率低,与多家信托公司合作,安全性和速度皆有保障.电话:010-59471747">
+    <meta name="keywords" content="嘉华普惠,神灯理财,神灯点金,房产抵押贷款,抵押贷款,住房抵押贷款,北京房子抵押贷款,北京房产抵押贷款,房产证抵押贷款,个人住房抵押贷款,房产抵押贷款公司,房子抵押贷款公司,">
+    <title>嘉华普惠</title>
+    <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico">
+    <style>
+    @import url(./css/common.css);
+    .banner {
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/bg_banner_251a638.png) center no-repeat;
+        background-size: 100% 430px;
+        height: 430px
+    }
+    .banner_c {
+        position: relative
+    }
+    .phone1 {
+        position: absolute;
+        top: 54px;
+        left: 20px;
+        width: 264px;
+        height: 476px;
+        opacity: 0
+    }
+    .phone1.show {
+        opacity: 1;
+        transition: opacity 2s ease;
+        -webkit-transition: opacity 2s ease;
+        -o-transition: opacity 2s ease;
+        -moz-transition: opacity 2s ease;
+        -ms-transition: opacity 2s ease
+    }
+    .phone2 {
+        position: absolute;
+        top: 43px;
+        left: 185px;
+        height: 486px;
+        opacity: 0
+    }
+    .phone2.show {
+        opacity: 1;
+        transition: opacity 2s ease;
+        -webkit-transition: opacity 2s ease;
+        -moz-transition: opacity 2s ease;
+        -o-transition: opacity 2s ease;
+        -ms-transition: opacity 2s ease
+    }
+    .banner_t1 {
+        position: absolute;
+        top: 80px;
+        left: 390px;
+        width: 164px;
+        height: 78px;
+        left: -999px;
+    }
+    .banner_t1.status1 {
+        left: 480px;
+        transition: left 1s
+    }
+    .banner_t2 {
+        position: absolute;
+        top: 155px;
+        left: 390px;
+        width: 430px;
+        height: 53px;
+        left: -999px;
+        ;
+        border-top: 1px solid #fff;
+        padding-top: 15px
+    }
+    .banner_t2.status1 {
+        left: 480px;
+        transition: left 1s
+    }
+    .banner_content {
+        position: absolute;
+        top: 270px;
+        left: 480px;
+        right: 52px;
+        color: #fff
+    }
+    .banner_content .p1 {
+        width: 225px;
+        height: 40px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 40px;
+        background: #ffab0a;
+        border-radius: 20px
+    }
+    .saoyisao {
+        margin-right: 7px
+    }
+    .banner_content .p2 {
+        font-size: 16px
+    }
+    .banner_c_ul {
+        padding: 15px 30px 0;
+        list-style-type: circle
+    }
+    .banner_c_ul li {
+        list-style-type: disc
+    }
+    .code_t {
+        padding-top: 10px;
+        text-align: center
+    }
+    .goods_list {
+        font-size: 0
+    }
+    .goods_list .good {
+        float: left;
+        width: 33%;
+        padding: 40px 0;
+        text-align: center
+    }
+    .good .icon {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin-right: 15px;
+        transform: rotate(0deg)
+    }
+    .good1_icon {
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/good1_058fbcc.png) left top no-repeat
+    }
+    .good2_icon {
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/good2_4b17b76.png) left top no-repeat;
+        margin-left: -36px
+    }
+    .good3_icon {
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/good3_eab1ba7.png) left top no-repeat;
+        margin-left: 17px
+    }
+    .good_s {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        font-size: 14px
+    }
+    .good .t1 {
+        font-size: 18px;
+        color: #595757;
+        padding-top: 10px
+    }
+    .good .t2 {
+        color: #727171;
+        font-size: 14px
+    }
+    .good:hover .icon {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+        animation: good 2s ease;
+        -webkit-animation: good 2s ease
+    }
+    @keyframes good {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg)
+        }
+    }
+    @-webkit-keyframes good {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg)
+        }
+    }
+    @-moz-keyframes good {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg)
+        }
+    }
+    @-ms-keyframes good {
+        from {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg)
+        }
+    }
+    .item_w {
+        overflow: hidden;
+        position: relative
+    }
+    .item1, .item3 {
+        background: #f1f8fb
+    }
+    .tit1, .tit2, .tit3 {
+        height: 57px;
+        margin-top: 30px;
+        margin-left: 47px
+    }
+    .tit1 {
+        height: 57px;
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/item1_t_e274182.png) top left no-repeat
+    }
+    .tit2 {
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/item2_t_c555b36.png) left top no-repeat
+    }
+    .tit3 {
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/item3_t_36bcbfc.png) left top no-repeat
+    }
+    .item1 {
+        padding-bottom: 58px
+    }
+    .item1_ul {
+        width: 294px;
+        margin-left: 100px;
+        padding-top: 23px
+    }
+    .item1_ul li {
+        border-bottom: solid 1px #cecece;
+        list-style: disc;
+        color: #a6e4c3;
+        font-size: 20px;
+        padding: 20px 0
+    }
+    .item1_ul li.nobor {
+        border-bottom: none
+    }
+    .item1_ul .item1_p1 {
+        font-size: 20px;
+        color: #5cd18b
+    }
+    .item1_ul .item1_p2 {
+        font-size: 16px;
+        color: #727171
+    }
+    .item1_img {
+        position: absolute;
+        top: 135px;
+        right: 50px;
+        right: -999px;
+        ;
+        width: 456px
+    }
+    .item1_img.status1 {
+        right: 50px;
+        transition: right 2s;
+        -webkit-transition: right 2s;
+        -moz-transition: right 2s;
+        -o-transition: right 2s;
+        -ms-transition: right 2s
+    }
+    .item2 {
+        padding-bottom: 27px
+    }
+    .item2_desc {
+        margin: 10px 0 50px 15px;
+        font-size: 18px
+    }
+    .item2_ul {
+        width: 470px;
+        float: right;
+        top: 75px
+    }
+    .item2_ul li {
+        list-style: disc;
+        color: #f18f68;
+        font-size: 20px
+    }
+    .item2_p_s {
+        display: inline-block;
+        color: #fff;
+        height: 55px;
+        line-height: 55px;
+        padding: 0 33px;
+        background: #f18f68;
+        border-radius: 10px
+    }
+    .tri {
+        width: 15px;
+        height: 20px;
+        background: url(https://www.shendenglicai.com/static/shendengfangchan/images/tri_icon_cb5f176.png) center no-repeat
+    }
+    .item2_img {
+        position: absolute;
+        left: 70px;
+        top: 130px;
+        left: -999px;
+        ;
+        width: 300px
+    }
+    .item2_img.status1 {
+        left: 70px;
+        transition: left 2s;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        -ms-transition: left 2s
+    }
+    .item3_ul {
+        width: 617px;
+        margin: 50px 0 40px 85px
+    }
+    .item3_t {
+        color: #3ac6fc;
+        font-size: 26px;
+        margin: 50px 0 10px 65px
+    }
+    .item3_c {
+        color: #727171;
+        font-size: 16px;
+        margin-left: 65px
+    }
+    .item3_ul li {
+        list-style: disc;
+        color: #3ac6fc;
+        margin-bottom: 20px;
+        font-size: 16px
+    }
+    .item3_s1 {
+        color: #3ac6fc;
+        padding-right: 5px
+    }
+    .item3_s2 {
+        color: #727171;
+        font-size: 16px
+    }
+    .item3_img {
+        position: absolute;
+        right: 56px;
+        top: 103px;
+        right: -999px;
+        ;
+        width: 405px
+    }
+    .item3_img.status1 {
+        right: 56px;
+        transition: right 1s;
+        -webkit-transition: right 1s;
+        -moz-transition: right 2s;
+        -o-transition: right 1s;
+        -ms-transition: right 2s
+    }
+</style>
 </head>
-<body>
-  <h1>Hello World!</h1>
+
+<body style="overflow-x:hidden">
+    <!--header-->
+    <div style="background:#fff">
+        <div class="header w">
+            <a href="./" class="logo" title="神灯"><img src="./images/logo_32ea72b.png"></a>
+            <a href="./" class="link" style="color: rgb(53, 134, 242);">首页</a>
+            <a href="./news.html" class="link">新闻中心</a>
+            <a href="./about.html" class="link">关于我们</a>
+            <a href="./join.html" class="link">加入我们</a>
+            <a href="./contact.html" class="link">联系我们</a>
+            <a href="./question.html" class="link">常见问题</a>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner">
+        <div class="banner_c w">
+            <div class="phone1"><img src="./images/phone1_a01d13a.png"></div>
+            <div class="phone2"><img src="./images/phone2_e3f8281.png"></div>
+            <div class="banner_t1" id="banner_t1"><img src="./images/banner_t1_3f08869.png" width="250"></div>
+            <div class="banner_t2"><img src="./images/banner_t2_a0d1a4a.png" width="280"></div>
+            <div class="banner_content">
+                <div class="fl mr20"><img src="./images/code_down_8bc0e12.png" class="ban_code">
+                    <br>
+                </div>
+                <p class="code_desc">行业领先的产品，最高的乘数，最低的点位</p>
+                <p class="code_desc">百亿资金稳定供应，房押贷最好的资金提供商</p>
+                <p class="code_desc">不接直客，为合作渠道提供最优质的服务</p>
+                <p class="p1 fl mt10"><img src="./images/saoyisao_90062c8.png" class="saoyisao">扫一扫关注微信服务号</p>
+            </div>
+        </div>
+    </div>
+    <!--产品优势-->
+    <div class="goods">
+        <ul class="w goods_list clearfix">
+            <li class="good"><i class="icon good1_icon"></i> <span class="good_s"><span class="t1">放款快</span>
+                <br><span class="t2">平均2天 最快24时内即可放款</span></span>
+            </li>
+            <li class="good"><i class="icon good2_icon"></i> <span class="good_s"><span class="t1">乘数高</span>
+                <br><span class="t2">一抵85%，二抵75%</span></span>
+            </li>
+            <li class="good"><i class="icon good3_icon"></i> <span class="good_s"><span class="t1">利率低</span>
+                <br><span class="t2">综合息费低至1.2%</span></span>
+            </li>
+        </ul>
+    </div>
+    <!--产品描述-->
+    <div class="item1">
+        <div class="w item_w"><img class="item1_img" src="./images/item1_8bf18f8.png">
+            <div class="tit1"></div>
+            <ul class="item1_ul">
+                <li>
+                    <p class="item1_p1">资金端</p>
+                    <p class="item1_p2">嘉华普惠背靠多家银行及大型金融机构
+                        <br>坐拥百亿资金，保证资金持续稳定供应</p>
+                </li>
+                <li>
+                    <p class="item1_p1">风控端</p>
+                    <p class="item1_p2">与多家征信、数据及国家政府机构对接并重点建设风险处置能力，具备强大的数据采集和风险处置能力</p>
+                </li>
+                <li class="nobor">
+                    <p class="item1_p1">资产端</p>
+                    <p class="item1_p2">只与有实力的渠道和机构合作，不接直客</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item2">
+        <div class="w item_w">
+            <div class="tit2"></div>
+            <ul class="item2_ul">
+                <li>
+                    <p class="item2_p"><i class="tri"></i><span class="item2_p_s">范围大</span></p>
+                </li>
+                <p class="item2_desc">接受一切可正常交易的商品房，范围覆盖全北京（除部分远郊区县）。一抵、二抵、转单均可贷款，还可申请展期</p>
+                <li>
+                    <p class="item2_p"><i class="tri"></i><span class="item2_p_s">覆盖广</span></p>
+                </li>
+                <p class="item2_desc">金额50-2000万，期限1-12个月</p>
+                <li class="nobor">
+                    <p class="item2_p"><i class="tri"></i><span class="item2_p_s">手续简便</span></p>
+                </li>
+                <p class="item2_desc">房本复印件即可，其他仅需身份证、户口本、结婚证、购房合同</p>
+            </ul><img class="item2_img " src="./images/item2_90b7347.png"></div>
+    </div>
+    <div class="item3">
+        <div class="w item_w">
+            <div class="tit3"></div>
+            <p class="item3_t">微信服务号掌控贷款全流程</p>
+            <p class="item3_c">提供房屋抵押贷款的全程服务及线上解决方案
+                <br>通过官方微信号可轻松掌控订单动向</p>
+            <ul class="item3_ul">
+                <li><span class="item3_s1">初评</span><span class="item3_s2">通过嘉华普惠微信号提交订单，最快1分钟即可<br>获得评估值</span></li>
+                <li><span class="item3_s1">调查</span><span class="item3_s2">在线预约，最快当天即可完成下户调查</span></li>
+                <li><span class="item3_s1">审批</span><span class="item3_s2">资料齐全则当日可收到审批结论</span></li>
+                <li><span class="item3_s1">公证</span><span class="item3_s2">在线生成合同，随时签约</span></li>
+                <li><span class="item3_s1">抵押</span><span class="item3_s2">专业权证员为您提供全程服务</span></li>
+                <li><span class="item3_s1">放款</span><span class="item3_s2">与多家信托公司合作，安全性和速度皆有保证</span></li>
+                <li><span class="item3_s1">返佣</span><span class="item3_s2">一次性全返，最快T+1返佣。</span></li>
+            </ul><img class="item3_img " src="./images/item3_7003800.png"></div>
+    </div>
+    <!--footer-->
+    <div class="footer_nav">2015 ShenDengFangChan | All rights reserved | 京ICP备15024104号-1</div>
+    <!-- 百度统计 -->
+    <script src="./js/hm.js"></script>
+    <script async="" src="./js/analytics.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./js/common_e73a163.js"></script>
+    <script>
+        document.querySelectorAll(".link")[0].style.color = "#3586f2", window.onload = function() {
+            function e() {
+                var e = document.querySelector(".item1_img"),
+                    t = document.querySelector(".item2_img"),
+                    o = document.querySelector(".item3_img"),
+                    n = document.documentElement.scrollTop || document.body.scrollTop,
+                    c = document.querySelector(".item1"),
+                    m = document.querySelector(".item2"),
+                    u = document.querySelector(".item3"),
+                    r = window.screen.availHeight;
+                c.offsetTop - r - n < -100 && (e.className = "item1_img status1"), m.offsetTop - r - n < -100 && (t.className = "item2_img status1"), u.offsetTop - r - n < -100 && (o.className = "item3_img status1")
+            }
+            var t = document.querySelector(".banner_t1"),
+                o = document.querySelector(".banner_t2");
+            t.className = "banner_t1 status1", o.className = "banner_t2 status1";
+            var n = document.querySelector(".phone1"),
+                c = document.querySelector(".phone2");
+            n.className = "phone1 show", setTimeout(function() {
+                c.className = "phone2 show"
+            }, 500), e(), window.onscroll = function() {
+                e()
+            }, require("baiduTJ")
+        };
+    </script>
 </body>
+
 </html>
