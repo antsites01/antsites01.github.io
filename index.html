@@ -15,6 +15,7 @@
             background: url(./images/banner.jpg) no-repeat center top;
             height: 430px;
             position: relative;
+            overflow: hidden;
         }
 
         .banner_c {
@@ -449,7 +450,7 @@
             width: 75px;
             height: 77px;
             background: url(./images/sun.png) no-repeat;
-            left: 0;
+            left: -120px;
             top: 5px;
             opacity: 0;
             filter: alpha(opacity=0);
@@ -465,7 +466,7 @@
         }
 
         .banner-word.show {
-            left: 0;
+            left: -120px;
             transition: 1.2s all;
         }
 
@@ -480,7 +481,7 @@
             width: 268px;
             height: 136px;
             background: url(./images/roll.png) no-repeat;
-            left: 358px;
+            left: 238px;
             top: 106px;
             z-index: 2;
             opacity: 0;
@@ -490,7 +491,7 @@
         .lee-banner {
             position: relative;
             height: 430px;
-            width: 1200px;
+            width: 960px;
             margin: 0 auto;
         }
 
@@ -566,6 +567,18 @@
         .move2 {
             -webkit-animation-name: move2;
             animation-name: move2;
+        }
+        @media screen and (max-width: 960px) {
+          .banner-word.show{
+            left: 0;
+            transition: 1.2s all;
+          }
+          .banner-roll{
+            left: 358px;
+          }
+          .banner-sun{
+            left: 0;
+          }
         }
     </style>
 
@@ -679,6 +692,32 @@
 
             $('.car1').css('left', '100%');
             $('.car2').css('left', '0');
+
+            // 判断是否是微信
+        function Android_IOS(){
+            // 判断是苹果还是安卓还是微信
+            var ua = navigator.userAgent.toLowerCase();
+            var u = navigator.userAgent;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            // 安卓 IOS
+            if(isAndroid){
+              $('.banner-word.show').css('left',0);
+              $('.banner-roll').css('left','358px');
+              $('.banner-sun').css('left',0);
+            }else if(isiOS){
+              $('.banner-word.show').css('left',0);
+              $('.banner-roll').css('left','358px');
+              $('.banner-sun').css('left',0);
+            };
+            // 判断是否是微信
+            if(ua.match(/MicroMessenger/i)=="micromessenger"){
+              $('.banner-word.show').css('left',0);
+              $('.banner-roll').css('left','358px');
+              $('.banner-sun').css('left',0);
+            }
+          }
+          Android_IOS();
 
         })
     </script>
