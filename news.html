@@ -280,17 +280,13 @@
 </head>
 
 <body>
-	<!--footer点击连接回到顶部-->
-	<a href="http://www.shendenglicai.com/news/list?page=1&amp;num=7" id="about" class="metaLink"></a>
-	<a href="http://www.shendenglicai.com/news/list?page=1&amp;num=7" id="join" class="metaLink"></a>
-	<a href="http://www.shendenglicai.com/news/list?page=1&amp;num=7" id="contact" class="metaLink"></a>
-	<a href="http://www.shendenglicai.com/news/list?page=1&amp;num=7" id="question" class="metaLink"></a>
 	<!--header-->
 	<div class="container">
 		<div style="background:#fff">
         <div class="header w">
-            <a href="./" class="logo" title="神灯"><img src="./images/logo_32ea72b.png"></a> <a href="./" class="link" >首页</a>
-            <a href="./news.html" class="link" style="color: rgb(53, 134, 242);">新闻中心</a>
+            <a href="./index.html" class="logo" title="神灯"><img src="./images/logo_32ea72b.png"></a>
+            <a href="./index.html" class="link" style="color: rgb(53, 134, 242);">首页</a>
+            <a href="./news.html" class="link">新闻中心</a>
             <a href="./about.html" class="link">关于我们</a>
             <a href="./join.html" class="link">加入我们</a>
             <a href="./contact.html" class="link">联系我们</a>
@@ -313,16 +309,16 @@
 						<h2 class="r_t">新闻中心</h2>
 						<div class="about_con con">
 							<div class="news_item clearfix">
-								<div class="news_title clearfix"><span class="fl fs18 c-585858">神灯金融：乘互联网东风，做不一样的的金融</span><span class="fr">2016-09-21 14:21:57</span></div>
+								<div class="news_title clearfix">
+									<span class="fl fs18 c-585858">天津鼎泰授牌仪式暨平安普惠渠道商峰会</span>
+									<span class="fr">2016-08-22 14:21:57</span>
+								</div>
 								<div class="news_summary">
+									2016年8月18日，天津鼎泰在上海接受中国平安对其平安金融的授牌仪式，天津鼎泰集团荣获前十...
+								</div>
+								<a class="fr" href="./new-details01.html">查看详情 →</a>
+							</div>
 
-									互联网金融银行发展时间并不长，然而其发展速度、规模和影响力已超出人们的想...</div><a class="fr" href="http://www.shendenglicai.com/news/article?id=22">查看详情 →</a></div>
-							<div class="news_item clearfix">
-								<div class="news_title clearfix"><span class="fl fs18 c-585858">神灯金融：助力小微企业发展</span><span class="fr">2016-09-21 13:38:22</span></div>
-								<div class="news_summary">在我国全部企业中，中小微企业数量庞大，占到我国企业总数的94%，提供了全国城镇85...</div><a class="fr" href="http://www.shendenglicai.com/news/article?id=19">查看详情 →</a></div>
-							<div class="news_item clearfix">
-								<div class="news_title clearfix"><span class="fl fs18 c-585858">神灯金融：用专业高效的服务态度助力普惠金融</span><span class="fr">2016-09-21 11:31:32</span></div>
-								<div class="news_summary">有调查数据显示，2016年互联网金融行业进入到突飞猛进的阶段。在这种高速发展的行...</div><a class="fr" href="http://www.shendenglicai.com/news/article?id=16">查看详情 →</a></div>
 							<div id="kkpager" class="mt20">
 								<div><span class="pageBtnWrap"><span class="disabled">首页</span><span class="disabled">上一页</span><span class="curr">1</span><span class="disabled">下一页</span><span class="disabled">尾页</span></span><span class="infoTextAndGoPageBtnWrap"><span class="totalText"></span></span>
 								</div>
@@ -335,169 +331,7 @@
 		</div>
 	</div>
 	<!--footer-->
-	<div class="footer_nav">2015 ShenDengFangChan | All rights reserved | 京ICP备15024104号-1</div>
-	<script type="text/javascript" charset="utf-8" src="./js/common_e73a163.js"></script>
-	<!-- <script>
-		document.querySelectorAll(".link")[1].style.color = "#3586f2";
-		var $ = require("jquery"),
-			kkpager = {
-				pagerid: "kkpager",
-				mode: "link",
-				pno: 1,
-				total: 1,
-				totalRecords: 0,
-				isShowFirstPageBtn: !0,
-				isShowLastPageBtn: !0,
-				isShowPrePageBtn: !0,
-				isShowNextPageBtn: !0,
-				isShowTotalPage: !0,
-				isShowCurrPage: !0,
-				isShowTotalRecords: !1,
-				isGoPage: !0,
-				isWrapedPageBtns: !0,
-				isWrapedInfoTextAndGoPageBtn: !0,
-				hrefFormer: "",
-				hrefLatter: "",
-				gopageWrapId: "kkpager_gopage_wrap",
-				gopageButtonId: "kkpager_btn_go",
-				gopageTextboxId: "kkpager_btn_go_input",
-				lang: {
-					firstPageText: "首页",
-					firstPageTipText: "首页",
-					lastPageText: "尾页",
-					lastPageTipText: "尾页",
-					prePageText: "上一页",
-					prePageTipText: "上一页",
-					nextPageText: "下一页",
-					nextPageTipText: "下一页",
-					totalPageBeforeText: "共",
-					totalPageAfterText: "页",
-					currPageBeforeText: "当前第",
-					currPageAfterText: "页",
-					totalInfoSplitStr: "/",
-					totalRecordsBeforeText: "共",
-					totalRecordsAfterText: "条数据",
-					gopageBeforeText: "&nbsp;转到",
-					gopageButtonOkText: "确定",
-					gopageAfterText: "页",
-					buttonTipBeforeText: "第",
-					buttonTipAfterText: "页"
-				},
-				getLink: function(t) {
-					return 1 == t ? this.hrefFormer + this.hrefLatter : this.hrefFormer + "_" + t + this.hrefLatter
-				},
-				click: function(t) {
-					return !1
-				},
-				getHref: function(t) {
-					return "#"
-				},
-				focus_gopage: function() {
-					var t = $("#" + this.gopageButtonId);
-					$("#" + this.gopageTextboxId).attr("hideFocus", !0), t.show(), t.css("left", "10px"), $("#" + this.gopageTextboxId).addClass("focus"), t.animate({
-						left: "+=30"
-					}, 50)
-				},
-				blur_gopage: function() {
-					var t = this;
-					setTimeout(function() {
-						var e = $("#" + t.gopageButtonId);
-						e.animate({
-							left: "-=25"
-						}, 100, function() {
-							e.hide(), $("#" + t.gopageTextboxId).removeClass("focus")
-						})
-					}, 400)
-				},
-				keypress_gopage: function() {
-					var t = arguments[0] || window.event,
-						e = t.keyCode || t.charCode;
-					return 8 == e ? !0 : 13 == e ? (kkpager.gopage(), !1) : (!t.ctrlKey || 99 != e && 118 != e) && (48 > e || e > 57) ? !1 : !0
-				},
-				gopage: function() {
-					var t = $("#" + this.gopageTextboxId).val();
-					if (isNaN(t)) return void $("#" + this.gopageTextboxId).val(this.next);
-					var e = parseInt(t);
-					1 > e && (e = 1), e > this.total && (e = this.total), "click" == this.mode ? this._clickHandler(e) : window.location = this.getLink(e)
-				},
-				selectPage: function(t) {
-					this._config.pno = t, this.generPageHtml(this._config, !0)
-				},
-				generPageHtml: function(t, e) {
-					(e || !this.inited) && this.init(t);
-					var a = "",
-						s = "",
-						i = "",
-						o = "";
-					this.isShowFirstPageBtn && (a = this.hasPrv ? "<a " + this._getHandlerStr(1) + ' title="' + (this.lang.firstPageTipText || this.lang.firstPageText) + '">' + this.lang.firstPageText + "</a>" : '<span class="disabled">' + this.lang.firstPageText +
-						"</span>"), this.isShowPrePageBtn && (s = this.hasPrv ? "<a " + this._getHandlerStr(this.prv) + ' title="' + (this.lang.prePageTipText || this.lang.prePageText) + '">' + this.lang.prePageText + "</a>" : '<span class="disabled">' + this.lang.prePageText +
-						"</span>"), this.isShowNextPageBtn && (i = this.hasNext ? "<a " + this._getHandlerStr(this.next) + ' title="' + (this.lang.nextPageTipText || this.lang.nextPageText) + '">' + this.lang.nextPageText + "</a>" : '<span class="disabled">' + this
-						.lang.nextPageText + "</span>"), this.isShowLastPageBtn && (o = this.hasNext ? "<a " + this._getHandlerStr(this.total) + ' title="' + (this.lang.lastPageTipText || this.lang.lastPageText) + '">' + this.lang.lastPageText + "</a>" :
-						'<span class="disabled">' + this.lang.lastPageText + "</span>");
-					var n = "",
-						r = '<span class="spanDot">...</span>',
-						g = '<span class="totalText">',
-						h = '<span class="totalInfoSplitStr">' + this.lang.totalInfoSplitStr + "</span>";
-					this.isShowCurrPage ? (g += this.lang.currPageBeforeText + '<span class="currPageNum">' + this.pno + "</span>" + this.lang.currPageAfterText, this.isShowTotalPage ? (g += h, g += this.lang.totalPageBeforeText + '<span class="totalPageNum">' +
-							this.total + "</span>" + this.lang.totalPageAfterText) : this.isShowTotalRecords && (g += h, g += this.lang.totalRecordsBeforeText + '<span class="totalRecordNum">' + this.totalRecords + "</span>" + this.lang.totalRecordsAfterText)) : this.isShowTotalPage ?
-						(g += this.lang.totalPageBeforeText + '<span class="totalPageNum">' + this.total + "</span>" + this.lang.totalPageAfterText, this.isShowTotalRecords && (g += h, g += this.lang.totalRecordsBeforeText + '<span class="totalRecordNum">' + this.totalRecords +
-							"</span>" + this.lang.totalRecordsAfterText)) : this.isShowTotalRecords && (g += this.lang.totalRecordsBeforeText + '<span class="totalRecordNum">' + this.totalRecords + "</span>" + this.lang.totalRecordsAfterText), g += "</span>";
-					var l = "";
-					if (this.isGoPage && (l = '<span class="goPageBox">' + this.lang.gopageBeforeText + '<span id="' + this.gopageWrapId + '"><input type="button" id="' + this.gopageButtonId + '" onclick="kkpager.gopage()" value="' + this.lang.gopageButtonOkText +
-							'" /><input type="text" id="' + this.gopageTextboxId + '" onfocus="kkpager.focus_gopage()"  onkeypress="return kkpager.keypress_gopage(event);"   onblur="kkpager.blur_gopage()" value="' + this.next + '" /></span>' + this.lang.gopageAfterText +
-							"</span>"), this.total <= 8)
-						for (var p = 1; p <= this.total; p++) n += this.pno == p ? '<span class="curr">' + p + "</span>" : "<a " + this._getHandlerStr(p) + ' title="' + this.lang.buttonTipBeforeText + p + this.lang.buttonTipAfterText + '">' + p + "</a>";
-					else if (this.pno <= 5) {
-						for (var p = 1; 7 >= p; p++) n += this.pno == p ? '<span class="curr">' + p + "</span>" : "<a " + this._getHandlerStr(p) + ' title="' + this.lang.buttonTipBeforeText + p + this.lang.buttonTipAfterText + '">' + p + "</a>";
-						n += r
-					} else {
-						n += "<a " + this._getHandlerStr(1) + ' title="' + this.lang.buttonTipBeforeText + "1" + this.lang.buttonTipAfterText + '">1</a>', n += "<a " + this._getHandlerStr(2) + ' title="' + this.lang.buttonTipBeforeText + "2" + this.lang.buttonTipAfterText +
-							'">2</a>', n += r;
-						var d = this.pno - 2,
-							c = this.pno + 2;
-						c > this.total ? (c = this.total, d = c - 4, this.pno - d < 2 && (d -= 1)) : c + 1 == this.total && (c = this.total);
-						for (var p = d; c >= p; p++) n += this.pno == p ? '<span class="curr">' + p + "</span>" : "<a " + this._getHandlerStr(p) + ' title="' + this.lang.buttonTipBeforeText + p + this.lang.buttonTipAfterText + '">' + p + "</a>";
-						c != this.total && (n += r)
-					}
-					var f = "<div>";
-					f += this.isWrapedPageBtns ? '<span class="pageBtnWrap">' + a + s + n + i + o + "</span>" : a + s + n + i + o, f += this.isWrapedInfoTextAndGoPageBtn ? '<span class="infoTextAndGoPageBtnWrap">' + g + l + "</span>" : g + l, f +=
-						'</div><div style="clear:both;"></div>', $("#" + this.pagerid).html(f)
-				},
-				init: function(t) {
-					if (this.pno = isNaN(t.pno) ? 1 : parseInt(t.pno), this.total = isNaN(t.total) ? 1 : parseInt(t.total), this.totalRecords = isNaN(t.totalRecords) ? 0 : parseInt(t.totalRecords), t.pagerid && (this.pagerid = t.pagerid), t.mode && (this.mode = t
-							.mode), t.gopageWrapId && (this.gopageWrapId = t.gopageWrapId), t.gopageButtonId && (this.gopageButtonId = t.gopageButtonId), t.gopageTextboxId && (this.gopageTextboxId = t.gopageTextboxId), void 0 != t.isShowFirstPageBtn && (this.isShowFirstPageBtn =
-							t.isShowFirstPageBtn), void 0 != t.isShowLastPageBtn && (this.isShowLastPageBtn = t.isShowLastPageBtn), void 0 != t.isShowPrePageBtn && (this.isShowPrePageBtn = t.isShowPrePageBtn), void 0 != t.isShowNextPageBtn && (this.isShowNextPageBtn =
-							t.isShowNextPageBtn), void 0 != t.isShowTotalPage && (this.isShowTotalPage = t.isShowTotalPage), void 0 != t.isShowCurrPage && (this.isShowCurrPage = t.isShowCurrPage), void 0 != t.isShowTotalRecords && (this.isShowTotalRecords = t.isShowTotalRecords),
-						t.isWrapedPageBtns && (this.isWrapedPageBtns = t.isWrapedPageBtns), t.isWrapedInfoTextAndGoPageBtn && (this.isWrapedInfoTextAndGoPageBtn = t.isWrapedInfoTextAndGoPageBtn), void 0 != t.isGoPage && (this.isGoPage = t.isGoPage), t.lang)
-						for (var e in t.lang) this.lang[e] = t.lang[e];
-					this.hrefFormer = t.hrefFormer || "", this.hrefLatter = t.hrefLatter || "", t.getLink && "function" == typeof t.getLink && (this.getLink = t.getLink), t.click && "function" == typeof t.click && (this.click = t.click), t.getHref && "function" ==
-						typeof t.getHref && (this.getHref = t.getHref), this._config || (this._config = t), this.pno < 1 && (this.pno = 1), this.total = this.total <= 1 ? 1 : this.total, this.pno > this.total && (this.pno = this.total), this.prv = this.pno <= 2 ? 1 :
-						this.pno - 1, this.next = this.pno >= this.total - 1 ? this.total : this.pno + 1, this.hasPrv = this.pno > 1, this.hasNext = this.pno < this.total, this.inited = !0
-				},
-				_getHandlerStr: function(t) {
-					return "click" == this.mode ? 'href="' + this.getHref(t) + '" onclick="return kkpager._clickHandler(' + t + ')"' : 'href="' + this.getLink(t) + '"'
-				},
-				_clickHandler: function(t) {
-					var e = !1;
-					return this.click && "function" == typeof this.click && (e = this.click.call(this, t) || !1), e
-				}
-			};
-		kkpager.generPageHtml({
-			pno: location.search.match(/page=(\d+)/)[1],
-			mode: "link",
-			total: pageCount,
-			hrefFormer: "/news/list?page=",
-			hrefLatter: "&num=7",
-			isGoPage: !1,
-			isShowCurrPage: !1,
-			isShowTotalPage: !1,
-			isWrapedPageBtns: !1,
-			isShowTotalRecords: !1,
-			getLink: function(t) {
-				return 1 == t ? this.hrefFormer + "1" + this.hrefLatter : this.hrefFormer + t + this.hrefLatter
-			}
-		});
-	</script> -->
+	<div class="footer_nav">2016 JiaHuaPuhui | All rights reserved | 京ICP备16013405号-1</div>
 </body>
 
 </html>
